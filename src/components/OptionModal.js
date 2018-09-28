@@ -3,16 +3,16 @@ import ReactModal from "react-modal";
 
 ReactModal.setAppElement("#root");
 const OptionModal = props => {
-  const { selectedOption } = props;
+  const { selectedOption, handleClearSelectedOption } = props;
   return (
     <ReactModal
       isOpen={!!selectedOption}
       contantLabel="Selected Option"
-      onRequestClose={props.handleClearSelectedOption}
+      onRequestClose={handleClearSelectedOption}
     >
       <h3>Selected Option</h3>
       {selectedOption && <p>{selectedOption}</p>}
-      <button onClick={props.handleClearSelectedOption}>Okey</button>
+      <button onClick={handleClearSelectedOption}>Okey</button>
     </ReactModal>
   );
 };

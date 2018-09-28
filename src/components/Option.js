@@ -1,12 +1,13 @@
 import React from "react";
 
 const Option = props => {
+  const { optionText, handleDeleteOption } = props;
   return (
     <div>
-      {props.optionText}
+      {optionText}
       <button
         onClick={e => {
-          props.handleDeleteOption(props.optionText);
+          handleDeleteOption(optionText);
         }}
       >
         remove
