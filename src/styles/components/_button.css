@@ -1,0 +1,37 @@
+.big-button {
+  background: var(--purple);
+  border: none;
+  border-bottom: .6rem solid darken(var(--purple), 10%);
+  color: white;
+  font-weight: bold;
+  font-size: var(--l-size);
+  margin-bottom: var(--m-size);
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.big-button:disabled {
+  opacity: .5;
+}
+
+@media (min-width: var(--desktop-breakpoint)) {
+  .big-button {
+    margin-bottom: var(--xl-size);
+  }
+}
+
+.button {
+  background: var(--purple);
+  border: none;
+  border-bottom: .3rem solid darken(var(--purple), 10%);
+  color: white;
+  font-weight: 500;
+  padding: var(--s-size);
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: var(--off-white);
+  padding: 0;
+}
