@@ -1,0 +1,31 @@
+.add-option-error {
+  color: var(--off-white);
+  font-style: italic;
+  margin: var(--m-size) 0 0 0;
+  padding: 0 var(--m-size);
+}
+
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: var(--m-size);
+}
+
+.add-option__input {
+  background: var(--dark-blue);
+  border: none;
+  color: var(--off-white);
+  border-bottom: 0.3rem solid darken(var(--dark-blue), 10%);
+  flex-grow: 1;
+  margin: 0 0 var(--s-size) 0;
+  padding: var(--s-size);
+}
+
+@media (min-width: var(--desktop-breakpoint)) {
+  .add-option {
+    flex-direction: row;
+  }
+  .add-option__input {
+    margin: 0 var(--s-size) 0 0;
+  }
+}
